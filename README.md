@@ -34,13 +34,13 @@
 
 ## 📥 下载脚本（默认root路径下）
 
-### 使用 curl（推荐）
+### 1.使用 curl（推荐）
 
 ```bash
 curl -o tg_stock_notify_multi.php \
 https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
 ```
-### 使用 wget（一样）
+### 2.使用 wget（一样）
 ```bash
 wget -O tg_stock_notify_multi.php \
 https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
