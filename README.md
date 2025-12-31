@@ -39,13 +39,13 @@
 ```bash
 curl -o tg_stock_notify_multi.php \
 https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
-```bash
+```
 ### 使用 wget（一样）
 ```bash
 wget -O tg_stock_notify_multi.php \
 https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
-```bash
+```
 ## ⚙️ 配置说明（必须修改）
 ```bash
 nano tg_stock_notify_multi.php
-```bash
+```
