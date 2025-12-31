@@ -1,7 +1,10 @@
-# 🛒 Unicorn Card – Telegram Stock Notifier
+# 🛒 tg_stock_notify_multi
 
-一个用于 **独角兽发卡（Unicorn Card）** 的 **Telegram 库存通知脚本**，  
+一个用于 **独角兽发卡（Unicorn Card）** 的 **Telegram 库存通知脚本**。  
 支持 **多商品监控、补货通知、售罄通知、按钮式购买链接**，适合长期无人值守运行。
+
+- GitHub：https://github.com/Netflixxp/tg_stock_notify_multi
+- 脚本：`tg_stock_notify_multi.php`
 
 ---
 
@@ -13,7 +16,7 @@
 - ✅ 显示 **北京时间**
 - ✅ 显示 **距上次售罄 X 分钟**
 - ✅ Telegram **按钮式购买链接（Inline Keyboard）**
-- ✅ 每个商品 **独立状态判断，不刷屏**
+- ✅ 每个商品 **独立判断状态，不刷屏**
 - ✅ 轻量日志，支持 `logrotate`
 - ❌ 不会因库存减少 1 个频繁通知
 
@@ -23,32 +26,25 @@
 
 - PHP ≥ 7.2（CLI）
 - MySQL / MariaDB
-- 独角兽发卡（基于 `goods` / `carmis` 表）
+- 独角兽发卡（默认 `goods` / `carmis` 表结构）
 - Linux（Ubuntu / Debian / CentOS 等）
 - Telegram Bot + Channel
 
 ---
 
-## 📊 数据表假设（独角兽发卡默认）
+## 📥 下载脚本（默认root路径下）
 
-### `goods` 表
-
-- `id`
-- `gd_name`
-- `deleted_at`
-
-### `carmis` 表
-
-- `goods_id`
-- `status`（`1 = 未售出`）
-- `deleted_at`
-
----
-
-## 🚀 快速开始
-
-### 1️⃣ 克隆仓库
+### 使用 curl（推荐）
 
 ```bash
-git clone https://github.com/yourname/unicorn-tg-stock-notifier.git
-cd unicorn-tg-stock-notifier
+curl -o tg_stock_notify_multi.php \
+https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
+
+### 使用 wget（一样）
+```bash
+wget -O tg_stock_notify_multi.php \
+https://raw.githubusercontent.com/Netflixxp/tg_stock_notify_multi/main/tg_stock_notify_multi.php
+
+## ⚙️ 配置说明（必须修改）
+```bash
+nano tg_stock_notify_multi.php
